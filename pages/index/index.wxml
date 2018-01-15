@@ -1,0 +1,8 @@
+<view class="content">
+    <view class="logo">
+        <image src="/assets/img/logo.png" mode='widthFix'  />
+    </view>
+    <view class="search" bindtap="searchTd">
+        <image src="/assets/img/search/searchImg.png" mode='widthFix'  />
+    </view>
+</view>

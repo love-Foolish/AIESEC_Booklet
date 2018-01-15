@@ -1,0 +1,17 @@
+<template name="floatIcon">
+    <view class="floatIcon">
+        <view class="model">
+            <image wx:if="{{model=='model_1'}}" src="/assets/img/model_1.png"  bindtap="changeModel" mode="aspectFit"></image>
+            <image wx:else src="/assets/img/model_2.png" catchtap="changeModel" mode="aspectFit"></image>
+        </view>
+        <!--<view class="toTop">
+            <image src="/assets/img/toTop.png" mode="aspectFit" bindtap="toTop"></image>
+        </view>-->
+    </view>
+</template>
+<template name="tip">
+    <view class="tip_collect" hidden="{{Item!=''}}" >
+        <image src="/assets/img/cry.png" mode="aspectFit"></image>
+        <text>什么都没有哦 ~</text>
+    </view>
+</template>

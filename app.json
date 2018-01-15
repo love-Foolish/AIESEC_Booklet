@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/collect/collect",
+    "pages/column/column",
+    "pages/detail/detail",
+    "pages/searchTd/searchTd",
+    "pages/animation/animation"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "AIESEC蓝页",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":false
+  },
+  "tabBar":{
+    "color": "#d4d4d4",
+    "selectedColor": "#0f88eb",
+    "backgroundColor": "#fffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "搜索",
+        "pagePath": "pages/index/index",
+        "iconPath": "assets/img/tabBar/search.png",
+        "selectedIconPath":"assets/img/tabBar/searchTd.png"
+      },
+      {
+        "text":"栏目",
+        "pagePath": "pages/column/column",
+        "iconPath": "assets/img/tabBar/column.png",
+        "selectedIconPath": "assets/img/tabBar/columnTd.png"
+      },
+      {
+        "text": "收藏",
+        "pagePath": "pages/collect/collect",
+        "iconPath": "assets/img/tabBar/collect.png",
+        "selectedIconPath": "assets/img/tabBar/collectTd.png"
+      }
+    ]
+  }
+}

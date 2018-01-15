@@ -1,0 +1,20 @@
+<view hidden="{{hideLoading}}">
+    <import src="../animation/animation"  />
+    <template is="cube-grid" data="{{hideLoading}}"  />
+</view>
+<import src="../template/columnTpl"  />
+<import src="../template/columnTpl2"  />
+<import src="../template/floatIcon"  />
+<import src="../template/refreshAndMore"  />
+<template is="refresh" data="{{refreshHeight,refreshing_text}}"></template>
+<scroll-view class="scroll_container" scroll-y="true" bindscroll="scroll" bindscrolltolower="lower"
+             style="top:{{refreshHeight}}rpx;bottom:{{loadMoreHeight}}rpx;" bindscrolltoupper="upper"
+             bindtouchstart="start" bindtouchend="end">
+    <view class="content_move" bindtouchmove="move">
+        <template wx:if="{{model=='model_1'}}" is="columnTpl" data="{{Item,refresh}}"></template>
+        <template wx:else is="columnTpl2" data="{{Item,refresh}}"></template>
+    </view>
+</scroll-view>
+<template is="loadMore" data="{{loadMoreHeight,loading_text}}"></template>
+<template is="floatIcon" data="{{model}}"></template>
+<template is="tip" data="{{Item}}"></template>

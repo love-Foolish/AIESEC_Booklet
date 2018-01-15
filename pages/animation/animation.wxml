@@ -1,0 +1,13 @@
+<template name="cube-grid">
+    <view class="cube-grid">
+        <view class="cube cube1"></view>
+        <view class="cube cube2"></view>
+        <view class="cube cube3"></view>
+        <view class="cube cube4"></view>
+        <view class="cube cube5"></view>
+        <view class="cube cube6"></view>
+        <view class="cube cube7"></view>
+        <view class="cube cube8"></view>
+        <view class="cube cube9"></view>
+    </view>
+</template>

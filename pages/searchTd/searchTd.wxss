@@ -1,0 +1,36 @@
+@import "../template/columnTpl.wxss";
+@import "../template/columnTpl2.wxss";
+@import "../animation/animation.wxss"; 
+@import "../template/floatIcon.wxss";
+/*@import "../template/refreshAndMore.wxss";*/
+.searchBar{
+    padding: 20rpx 40rpx 40rpx 40rpx;
+    background-color: #FFF;
+    height: 70rpx;
+    vertical-align: middle;
+    margin: 0rpx 0rpx 40rpx 0rpx;
+    box-shadow: 0rpx 1rpx 10rpx 1rpx #E4E4E4;
+}
+.search{
+    float: left;
+    width:85%;
+    vertical-align: middle;
+}
+.search input{
+    height: 80rpx;
+    line-height: 40rpx;
+}
+.text-class{
+    font-weight: bold;
+    font-size: large;
+    color: #B2B2B2;
+}
+.touch{
+    float: right;
+    width:12%;
+    padding-top: 10rpx;
+    text-align: center;
+}
+.touch icon{
+    width: 60rpx;
+}

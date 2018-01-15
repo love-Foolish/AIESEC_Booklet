@@ -1,0 +1,47 @@
+<view class="label">
+    <scroll-view scroll-x="true" class="labelMain">
+        <block wx:for="{{functions}}">
+            <view class="functions {{selectLabel==item.id? 'selected' : ''}}" catchtap="labelTd" data-index="{{item.id}}">
+            {{item.name}}
+            </view>
+        </block>
+    </scroll-view>
+    <!--<view class="tab" bindtap="tabTd">
+    <image src="/assets/img/column/tab.png" class="tab_image {{tabTd? 'rotateRight':''}}" mode="widthFix"  />
+</view>
+-->
+<!--<view class="expand" hidden="{{expandTd}}">
+<checkbox-group class="group" bindchange="labelExTd">
+    <block wx:for="{{functions}}">
+        <label class="select {{item.checked?'selectTd':''}}">
+            <checkbox id="function" hidden value="{{item.name}}" checked="{{item.checked}}"  />
+            <view>{{item.name}}</view>
+        </label>
+    </block>
+</checkbox-group>
+</view>
+-->
+</view>
+<view hidden="{{hideLoading}}">
+    <import src="../animation/animation"  />
+    <template is="cube-grid" data="{{hideLoading}}"  />
+</view>
+
+<import src="../template/columnTpl"  />
+<import src="../template/columnTpl2"  />
+<import src="../template/floatIcon"  />
+<import src="../template/refreshAndMore"  />
+<template is="refresh" data="{{refreshHeight,refreshing_text}}"></template>
+<!-- 内容加载 -->
+<template is="floatIcon" data="{{model}}"></template>
+<template is="tip" data="{{Item}}"></template>
+<scroll-view class="scroll_container" scroll-y="true" bindscroll="scroll" bindscrolltolower="lower"
+             style="top:{{refreshHeight+100}}rpx;bottom:{{loadMoreHeight}}rpx;" bindscrolltoupper="upper"
+             bindtouchstart="start" bindtouchend="end">
+    <view class="content_move" bindtouchmove="move">
+        <template wx:if="{{model=='model_1'}}" is="columnTpl" data="{{Item,refresh}}"></template>
+        <template wx:else is="columnTpl2" data="{{Item,refresh}}"></template>
+    </view>
+</scroll-view>
+<template is="loadMore" data="{{loadMoreHeight,loading_text}}"></template>
+<!-- 浮动按钮 -->

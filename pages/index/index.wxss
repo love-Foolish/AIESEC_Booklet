@@ -1,0 +1,12 @@
+.logo image{
+    width:28%;
+    margin-bottom: 60rpx;
+    
+}
+.search image{
+    width: 90%;
+}
+.content{
+    text-align: center;
+    margin-top:22%;
+}

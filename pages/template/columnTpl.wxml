@@ -1,0 +1,33 @@
+<template name="columnTpl">
+    <block wx:for="{{Item}}">
+        <view class="content" animation="{{refresh}}">
+            <view class="headline" bindtap="toDetail" id="{{item.noti_id}}">
+                <image src="/assets/img/column/background.png" mode="aspectFill"  />
+                <!--<view class="head">
+                <image src="{{selected?collectSrcSelected:collectSrc}}" class="collect" mode="aspectFit"></image>
+                <view class="item" data-key="{{collectSelected}}" bindtap="click"></view>
+            </view>
+            -->
+            <text class="title">{{item.title}}</text>
+        </view>
+        <view class="tabBar">
+            <view class="heat">
+                <image src="/assets/img/column/heat.png" mode="aspectFit"  />
+                <text>{{item.hot_num}}</text>
+            </view>
+            <view class="discuss">
+                <image src="/assets/img/column/discuss.png" mode="aspectFit"  />
+                <text>{{item.comment_num}}</text>
+            </view>
+            <!--<view class="share">
+                <image src="/assets/img/column/share.png" mode="aspectFit"  />
+                <text>分享</text>
+            </view>
+            <view class="fold">
+                <image src="/assets/img/column/fold.png" mode="aspectFit"  />
+                <text>了解详情</text>
+            </view>-->
+        </view>
+    </view>
+</block>
+</template>

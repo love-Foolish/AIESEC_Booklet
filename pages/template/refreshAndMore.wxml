@@ -1,0 +1,10 @@
+<template name="refresh">
+    <view class="refresh-block" style="height:{{refreshHeight}}rpx">
+        <text class="refreshing_text">{{refreshing_text}}</text>
+    </view>
+</template>
+<template name="loadMore">
+    <view class="loadMore-block" style="height:{{loadMoreHeight}}rpx">
+        <text class="loading-text">{{loading_text}}</text>
+    </view>
+</template>

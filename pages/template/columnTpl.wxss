@@ -1,0 +1,92 @@
+.content{
+    float: center;
+    position: relative;
+    top:60px;
+    width: 93%;
+    height: 540rpx;
+    margin: 40rpx 3.5% 50rpx 3.5%; 
+    background-color: #FFF;
+    box-shadow: 0rpx 0rpx 10rpx 5rpx #d4d4d4;
+    border-radius: 7rpx;
+}
+.headline{
+    width: 100%;
+    height: 400rpx;
+    position: relative;
+}
+.headline image{
+    position: absolute;
+    width: 100%;
+    height: 400rpx;
+    border-top-left-radius: 7rpx;
+    border-top-right-radius: 7rpx;
+}
+.head{
+    border: solid;
+    position: absolute;
+    width:70rpx;
+    height: 70rpx;
+    top:35rpx;
+    right: 50rpx;
+}
+.head image{
+    position: absolute;
+    width:66rpx;
+    height: 66rpx;
+}
+.item{
+    border: solid;
+    position: absolute;
+    width: 90rpx;
+    height: 90rpx;
+    bottom: -15rpx;
+    right: -15rpx;
+}
+.title{
+    position: absolute;
+    display: block;
+    background-color: rgba(0,0,0, 0.3);
+    width:99%;
+    padding:30rpx 0rpx 20rpx 0rpx;
+    bottom:0rpx;
+    word-wrap:break-word;
+    text-indent: 0.3em;
+    color: #FFF;
+    font-size: larger;
+}
+.tabBar{
+    height: 120rpx;
+    width: 100%;
+}
+.heat{
+    margin:50rpx 10rpx 0rpx 30rpx;
+    float: left;
+}
+.heat image{
+    width: 34rpx;
+    height: 34rpx;
+}
+.discuss{
+    margin:50rpx 10rpx 0rpx 30rpx;
+    float: left;
+}
+.discuss image{
+    width: 34rpx;
+    height: 34rpx;
+}
+.fold{
+    margin: 50rpx 30rpx 0rpx 10rpx;
+    float: right;
+}
+.fold image{
+    width: 34rpx;
+    height: 34rpx;
+}
+.share{
+    margin: 50rpx 30rpx 0rpx 10rpx;
+    float: right;
+}
+.share image{
+    width: 34rpx;
+    height: 34rpx;
+}

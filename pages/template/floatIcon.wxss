@@ -1,0 +1,53 @@
+.floatIcon {
+  z-index: 100;
+  position: fixed;
+  width: 120rpx;
+  right: 20rpx;
+  bottom: 20rpx;
+}
+.model{
+  background-color: #0f88eb;
+  width: 100rpx;
+  height: 100rpx;
+  margin: 10rpx 10rpx 40rpx 10rpx;
+  border-radius: 100rpx;
+  box-shadow: 0rpx 0rpx 2rpx 2rpx #c4c4c4;
+}
+.model image{
+  width: 42rpx;
+  height: 42rpx;
+  margin: 30rpx 28rpx 28rpx 30rpx;
+}
+.toTop{
+  background-color: #F85A40;
+  width: 100rpx;
+  height: 100rpx;
+  margin: 30rpx 10rpx 10rpx 10rpx;
+  border-radius: 100rpx;
+  box-shadow: 0rpx 0rpx 2rpx 2rpx #c4c4c4;
+}
+.toTop image{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 25rpx 24rpx 25rpx 26rpx;
+}
+.tip_collect{
+    position: relative;
+    top: 280rpx;
+    margin: auto;
+    width: 300rpx;
+    text-align: center;
+}
+.tip_collect image{
+    height: 160rpx;
+    width: 160rpx;
+    margin:  10rpx 80rpx 10rpx 80rpx;
+}
+.tip_collect text{
+    margin-top: 25rpx; 
+    display: block;
+    font-weight: bold;
+    color: #cdcdcd;
+    font-size: 0.95em;
+    letter-spacing: 2rpx;
+}

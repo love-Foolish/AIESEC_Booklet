@@ -1,0 +1,12 @@
+<template name="columnTpl2">
+    <block wx:for="{{Item}}">
+        <view class="content_2" animation="{{refresh}}">
+            <view bindtap="toDetail" id="{{item.noti_id}}">
+                <view class="title_2">
+                    <text>{{item.title}}</text>
+                </view>
+                <image src="/assets/img/column/background.png" mode="aspectFill"  />
+            </view>
+        </view>
+    </block>
+</template>

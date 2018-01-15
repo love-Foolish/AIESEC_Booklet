@@ -1,0 +1,75 @@
+@import "../template/columnTpl.wxss";
+@import "../template/columnTpl2.wxss";
+@import "../animation/animation.wxss";
+@import "../template/floatIcon.wxss";
+@import "../template/refreshAndMore.wxss";
+.label{
+    position: relative;
+    height: 100rpx;
+    width: 100%;
+    background: #FFF;
+    box-shadow: 0rpx 1rpx 5rpx 3rpx #e4e4e4;
+}
+.labelMain{
+    position: relative;
+    float: left;
+    top:23rpx;
+    white-space: nowrap;
+    width:90%;
+    margin: 0 5% 0 5%;
+}
+.labelMain text{
+    font-weight: bold;
+}
+.functions{
+    display: inline-block;
+    height:55rpx;
+    text-align: center;
+    width: 20%;
+    font-weight: bold;
+    padding: 0 15rpx 0 15rpx;
+    margin: 0 10rpx 10rpx;
+}
+.selected{
+    border-bottom: solid;
+    border-bottom-color: #0F88EB;
+    border-bottom-left-radius: 3rpx;
+    border-bottom-right-radius: 3rpx;
+    border-bottom-width: 11rpx;
+    color:#0F88EB;
+}
+/*.tab{
+    width: 14%;
+    height: 50rpx;
+    float: left;
+    position: relative;
+    text-align: center;
+    top:45rpx;
+    text-align: center;
+}
+.tab_image{
+    width:40rpx;
+}
+.rotateRight{
+    transform:rotate(-90deg);
+}
+.expand{
+    position: block;
+    margin-top: 120rpx;
+    position: absolute;
+    z-index: 100;
+    background-color: #FFF;
+    padding:25rpx 30rpx 25rpx 30rpx;
+}
+.select{
+    float: left;
+    border: solid;
+    border-radius: 38rpx;
+    text-align: center;
+    padding: 12rpx 30rpx 12rpx 30rpx;
+    margin: 15rpx;
+}
+.selectTd{
+    border-color: #55D668;
+    color: #55D668;
+}*/

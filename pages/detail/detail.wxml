@@ -1,0 +1,80 @@
+<view class="container">
+    <!-- 全部 -->
+    <view class="cover">
+        <!-- 背景图片+icon -->
+        <image class="background" src="/assets/img/detail/toping.jpg" mode="aspectFill"  />
+        <view class="head">
+            <image wx:if="{{Collected==0}}" catchtap="onCollectionTap" src="/assets/img/detail/collect.png" mode="aspectFit"></image>
+            <image wx:else catchtap="onCollectionTap" src="/assets/img/detail/collectTd.png" mode="aspectFit"></image>
+            <!-- 收藏 -->
+            <label class="share-label">
+                <button class="share" hidden size="default" type="default" plain="true" open-type="share">转发</button>
+                <image src="/assets/img/detail/share.png" mode="aspectFit"  />
+            </label>
+            <!-- 分享 -->
+        </view>
+        <view class="headline">
+            <!-- 标题 -->
+            <text class="title">{{Article.title}}</text>
+            <!-- 题目 -->
+            <view class="date">
+                <!-- 日期 -->
+                <text>{{Article.created_at}}</text>
+            </view>
+            <view class="author">
+                <!-- 作者 -->
+                <text>{{Article.author}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="totalpaper">
+        <!-- 正文部分 -->
+        <view class="works" wx:for="{{Content}}" wx:for-index="idx">
+            <block wx:if="{{textArray[idx]==true}}">
+                <view><image src="{{item}}" mode="widthFix" bindtap="previewImage"/></view>
+            </block>
+            <block wx:else>
+                <view><text>{{item}}</text></view>
+            </block>
+        </view>
+    </view>
+    <view class="hitcom">
+        <!-- 浮动icon -->
+        <view class="heat">
+            <!-- 加热 -->
+            <image wx:if="{{Heated==false}}" catchtap="heatThisNotic" src="/assets/img/detail/heat.png" mode="aspectFit"></image>
+            <image wx:else src="/assets/img/detail/heatTd.png" mode="aspectFit"></image>
+        </view>
+        <view class="comments" bindtap="Focus">
+            <!-- 反馈 -->
+            <image src="/assets/img/detail/comment.png" mode="aspectFit"></image>
+        </view>
+    </view>
+    <view class="comment">
+        <!-- 发表留言部分 -->
+        <textarea auto-focus class="cominput" placeholder="友好留言，营造良好AIESEC氛围." placeholder-class="cominputPlaceholder"
+                  bindinput="bindKeyInput" value="{{inputVal}}" focus="{{focus}}" auto-focus="{{focus}}"/>
+        <button class="button" size="mini" bindtap="addComment">
+            <text>留言</text>
+        </button>
+    </view>
+    <block wx:for="{{Comments}}" wx:for-item="CommentsId" wx:for-index="idx">
+        <view class="criticisms">
+            <!-- 留言部分 -->
+            <text class="username">{{Comments[idx].com_author}}</text>
+            <!-- 留言者姓名 -->
+            <text class="time">{{Comments[idx].com_created_at}}</text>
+            <!-- 留言时间 -->
+            <view class="fab">
+                <image wx:if="{{CommentsHeated[CommentsId.comment_id]!= true}}" src="/assets/img/detail/fab.png" mode="aspectFit"
+                       bindtap="heatThisComment" data-id="{{CommentsId.comment_id}}" data-index="{{idx}}"></image>
+                <image wx:else src="/assets/img/detail/fabTd.png" mode="aspectFit"></image>
+                <text>{{Comments[idx].comment_hot_num}}</text>
+                <!-- 点赞次数 -->
+            </view>
+            <!-- 点赞次数 -->
+            <text class="message">{{Comments[idx].comment_body}}</text>
+            <!-- 点赞内容 -->
+        </view>
+    </block>
+</view>

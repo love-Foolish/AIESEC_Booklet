@@ -1,0 +1,74 @@
+.cube-grid{
+    width: 40px;
+    height: 40px;
+    margin: 350rpx auto;
+    z-index: 1000;
+}
+.cube-grid .cube{
+    width:33.3%;
+    height:33.3%;
+    background-color: #0f88eb;
+    float:left;
+    -webkit-animation: cubeGridScaleDelay 1.4s infinite ease-in-out;
+    animation: cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+cube-grid .cube1{
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+cube-grid .cube2{
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+cube-grid .cube3{
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+@-webkit-keyframes cubeGridScaleDelay{
+    0%, 70%, 100% {
+        -webkit-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1);
+    }
+    35% {
+        -webkit-transform: scale3d(0,0,1);
+        transform: scale3d(0,0,1);
+    }
+}
+@keyframes cubeGridScaleDelay{
+    0%, 70%, 100% {
+        -webkit-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1);
+    }
+    35% {
+        -webkit-transform: scale3d(0,0,1);
+        transform: scale3d(0,0,1);
+    }
+}
+cube-grid .cube3{
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+cube-grid .cube4{
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+cube-grid .cube5{
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+cube-grid .cube6{
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+cube-grid .cube7{
+    -webkit-animation-delay: 0.0s;
+    animation-delay: 0.0s;
+}
+cube-grid .cube8{
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+cube-grid .cube9{
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}

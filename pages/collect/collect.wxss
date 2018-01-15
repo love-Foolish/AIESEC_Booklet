@@ -1,0 +1,5 @@
+@import "../template/columnTpl.wxss";
+@import "../template/columnTpl2.wxss";
+@import "../animation/animation.wxss"; 
+@import "../template/floatIcon.wxss";
+@import "../template/refreshAndMore.wxss";
